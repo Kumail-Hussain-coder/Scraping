@@ -4,7 +4,7 @@ import requests
 import bs4
 import sys
 
-sys.stdout.reconfigure('utf-8')
+sys.stdout.reconfigure(encoding = 'utf-8')
 url = "https://open.spotify.com/"
 data = requests.get(url)
 soup = bs4.BeautifulSoup(data.text, 'html.parser')
