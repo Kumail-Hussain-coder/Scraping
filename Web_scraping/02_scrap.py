@@ -11,4 +11,4 @@ soup = bs4.BeautifulSoup(data.text, 'html.parser')
 
 # To take the paragraph we us loop
 for para in soup.find_all('p'):
-    print(para)
+    print(para.text)
